@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이니셜평반지</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Malgun Gothic', sans-serif; background: #fff; }
+        .container { max-width: 860px; margin: 0 auto; padding: 20px; }
+
+        /* 텍스트 편집 (contenteditable 적용된 요소) */
+        [contenteditable="true"] { border: 1px dashed transparent; padding: 2px 4px; transition: border-color 0.2s; }
+        [contenteditable="true"]:hover { border-color: #ccc; }
+        [contenteditable="true"]:focus { border-color: #4a90d9; outline: none; background: #fffde7; }
+
+        /* 이미지 */
+        .img-wrap { position: relative; display: inline-block; }
+        .img-wrap img { cursor: pointer; transition: opacity 0.2s; max-width: 100%; height: auto; }
+        .img-wrap img:hover { opacity: 0.85; }
+        .img-size-tooltip {
+            position: absolute; top: 8px; right: 8px;
+            background: rgba(0,0,0,0.7); color: #fff;
+            padding: 4px 10px; border-radius: 4px;
+            font-size: 12px; pointer-events: none;
+            display: none; z-index: 10;
+            white-space: nowrap;
+        }
+        .img-wrap:hover .img-size-tooltip { display: block; }
+
+        /* 툴바 */
+        .toolbar {
+            position: fixed; top: 0; left: 0; right: 0;
+            background: #333; color: #fff; padding: 10px 20px; z-index: 1000;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .toolbar span { font-size: 13px; }
+        .toolbar button { background: #4a90d9; color: #fff; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 14px; }
+        .toolbar button:hover { background: #357abd; }
+        .content { margin-top: 50px; }
+
+        /* 숨김 파일 인풋 */
+        .hidden-input { display: none; }
+
+        @media print {
+            .toolbar { display: none !important; }
+            .content { margin-top: 0 !important; }
+            .img-size-tooltip { display: none !important; }
+            [contenteditable="true"] { border: none !important; }
+        }
+    </style>
+</head>
+<body>
+    <div class="toolbar">
+        <span>텍스트 클릭 = 수정 | 이미지 클릭 = 교체 | 이미지 hover = 사이즈 표시</span>
+        <button onclick="window.print()">인쇄 / PDF 저장</button>
+    </div>
+    <input type="file" id="imgInput" class="hidden-input" accept="image/*">
+
+    <div class="container content">
+<div class="txt-manual">
+<!--휴가공지사항시작-->
+<div style="width:860px;margin:0 auto;"></div>
+<!--휴가공지사항끝-->
+<!-- 상품상세 공통정보 관리를 상세정보 상단에 노출-->
+<div style="width:860px;margin:0 auto;"></div><!--디자인픽스 튜닝 상단 공통 정보-->
+<p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"><span contenteditable="true" style="font-size: 24pt;"><b>이니셜평반지</b></span></p><p align="center" style="text-align: center;"><span contenteditable="true" style="font-size: 10pt;">순도 99.9%</span></p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"><span class="img-wrap"><img alt="info_01_102025.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/220921/info_01_102025.jpg" title="info_01_102025.jpg"/><span class="img-size-tooltip"></span></span></p><p align="center" style="text-align: center;"><span contenteditable="true" style="font-size: 10pt;">순금반지에 원하시는 문구를 각인할 수 있습니다.</span></p><p align="center" style="text-align: center;"><span contenteditable="true" style="font-size: 10pt;">각인문구는 10자 내외로 각인할 수 있습니다.</span></p><p align="center" style="text-align: center;"><span contenteditable="true" style="font-size: 10pt;">필기체, 고딕체 2가지로 각인이 가능합니다.</span></p><p align="center" style="text-align: center;"><span contenteditable="true" style="font-size: 10pt;">해당상품은 순도 99.9%로 제작됩니다.</span></p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"><span class="img-wrap"><img alt="info_02_102025.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/220921/info_02_102025.jpg" title="info_02_102025.jpg"/><span class="img-size-tooltip"></span></span></p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"><br style="clear:both;"/><span class="img-wrap"><img alt="info_03_102025.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/220921/info_03_102025.jpg" title="info_03_102025.jpg"/><span class="img-size-tooltip"></span></span></p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"><br style="clear:both;"/><span class="img-wrap"><img alt="info_04_102025.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/220921/info_04_102025.jpg" title="info_04_102025.jpg"/><span class="img-size-tooltip"></span></span></p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"><br style="clear:both;"/><span class="img-wrap"><img alt="info_05_102025.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/220921/info_05_102025.jpg" title="info_05_102025.jpg"/><span class="img-size-tooltip"></span></span></p><p> </p><div align="center" style="text-align: center;"><b style="font-size: 10pt;"><br/></b></div><div align="center" style="text-align: center;"><b style="font-size: 10pt;"><br/></b></div><div align="center" style="text-align: center;"><b style="font-size: 10pt;"><br/></b></div><div align="center" style="text-align: center;"><b style="font-size: 10pt;"><br/></b></div><div align="center" style="text-align: center;"><b style="font-size: 10pt;"><br/></b></div><div align="center" style="text-align: center;"><b style="font-size: 10pt;"><br/></b></div><div align="center" style="text-align: center;"><b style="font-size: 10pt;"><br/></b></div><div align="center" style="text-align: center;"><b style="font-size: 10pt;"><br/></b></div><div align="center" contenteditable="true" style="text-align: center;"><b style="font-size: 10pt;"><span contenteditable="true" style="font-size: 18pt;">제품크기</span></b></div><div align="center" style="text-align: center;"><b style="font-size: 10pt;"><span class="img-wrap"><img alt="size_01_104127.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/220921/size_01_104127.jpg" title="size_01_104127.jpg"/><span class="img-size-tooltip"></span></span><br style="clear:both;"/><br/></b></div><div align="center" style="text-align: center;"><b style="font-size: 10pt;"><span class="img-wrap"><img alt="size_01_104214.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/220921/size_01_104214.jpg" title="size_01_104214.jpg"/><span class="img-size-tooltip"></span></span><br style="clear:both;"/><span class="img-wrap"><img alt="size_02_104214.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/220921/size_02_104214.jpg" title="size_02_104214.jpg"/><span class="img-size-tooltip"></span></span><br style="clear:both;"/><span class="img-wrap"><img alt="size_03_104215.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/220921/size_03_104215.jpg" title="size_03_104215.jpg"/><span class="img-size-tooltip"></span></span><br style="clear:both;"/><span class="img-wrap"><img alt="size_04_104215.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/220921/size_04_104215.jpg" title="size_04_104215.jpg"/><span class="img-size-tooltip"></span></span><br style="clear:both;"/><span class="img-wrap"><img alt="size_05_104215.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/220921/size_05_104215.jpg" title="size_05_104215.jpg"/><span class="img-size-tooltip"></span></span><br style="clear:both;"/><span class="img-wrap"><img alt="size_06_104215.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/220921/size_06_104215.jpg" title="size_06_104215.jpg"/><span class="img-size-tooltip"></span></span><br style="clear:both;"/><span class="img-wrap"><img alt="size_07_104215.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/220921/size_07_104215.jpg" title="size_07_104215.jpg"/><span class="img-size-tooltip"></span></span><br style="clear:both;"/><span class="img-wrap"><img alt="size_08_104216.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/220921/size_08_104216.jpg" title="size_08_104216.jpg"/><span class="img-size-tooltip"></span></span><br style="clear:both;"/><span class="img-wrap"><img alt="size_09_104216.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/220921/size_09_104216.jpg" title="size_09_104216.jpg"/><span class="img-size-tooltip"></span></span><br style="clear:both;"/><span class="img-wrap"><img alt="size_10_104216.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/220921/size_10_104216.jpg" title="size_10_104216.jpg"/><span class="img-size-tooltip"></span></span><br style="clear:both;"/><span class="img-wrap"><img alt="size_11_104224.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/220921/size_11_104224.jpg" title="size_11_104224.jpg"/><span class="img-size-tooltip"></span></span><br style="clear:both;"/><br/></b></div><div align="center" style="text-align: center;"><b style="font-size: 10pt;"><br/></b></div><div align="center" style="text-align: center;"><b style="font-size: 10pt;"><br/></b></div><div align="center" style="text-align: center;"><b style="font-size: 10pt;">제품명 </b><span contenteditable="true" style="font-size: 10pt;">이니셜평</span><span contenteditable="true" style="font-size: 10pt;">반지</span></div><span style="font-size: 10pt"><div align="center" style="text-align: center;"><b style="font-size: 10pt;">원산지</b><span contenteditable="true" style="font-size: 10pt;"> 국산(서울시 종로구)</span></div>
+<div style="text-align: center;"><b style="font-weight: bold; font-size: 10pt;">제조사</b><span contenteditable="true" style="font-size: 10pt;"> (주)종로골드</span></div><div style="text-align: center;"><span style="font-size: 10pt;"><br/></span></div><div style="text-align: center;"><span style="font-size: 10pt;"><br/></span></div><div style="text-align: center;"><span style="font-size: 10pt;"><br/></span></div><div style="text-align: center;"><span style="font-size: 10pt;"><br/></span></div><div style="text-align: center;"><span style="font-size: 10pt;"><br/></span></div><div style="text-align: center;"><span style="font-size: 10pt;"><br/></span></div>
+</span><p> </p>
+<div style="width:860px;margin:0 auto;"></div>
+</div>
+    </div>
+
+    <script>
+        const fileInput = document.getElementById('imgInput');
+        let targetImg = null;
+
+        document.querySelectorAll('.img-wrap img').forEach(img => {
+            img.addEventListener('click', () => {
+                targetImg = img;
+                fileInput.click();
+            });
+        });
+
+        fileInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file && targetImg) {
+                const reader = new FileReader();
+                reader.onload = (ev) => {
+                    targetImg.src = ev.target.result;
+                    updateTooltip(targetImg);
+                };
+                reader.readAsDataURL(file);
+            }
+            fileInput.value = '';
+        });
+
+        function updateTooltip(img) {
+            const tooltip = img.parentElement.querySelector('.img-size-tooltip');
+            if (tooltip) {
+                const update = () => {
+                    tooltip.textContent = img.naturalWidth + ' x ' + img.naturalHeight + ' px';
+                };
+                if (img.complete && img.naturalWidth) update();
+                else img.addEventListener('load', update, { once: true });
+            }
+        }
+
+        document.querySelectorAll('.img-wrap img').forEach(img => {
+            updateTooltip(img);
+        });
+    </script>
+</body>
+</html>

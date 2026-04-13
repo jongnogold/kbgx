@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>더퀸팔찌</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Malgun Gothic', sans-serif; background: #fff; }
+        .container { max-width: 860px; margin: 0 auto; padding: 20px; }
+
+        /* 텍스트 편집 (contenteditable 적용된 요소) */
+        [contenteditable="true"] { border: 1px dashed transparent; padding: 2px 4px; transition: border-color 0.2s; }
+        [contenteditable="true"]:hover { border-color: #ccc; }
+        [contenteditable="true"]:focus { border-color: #4a90d9; outline: none; background: #fffde7; }
+
+        /* 이미지 */
+        .img-wrap { position: relative; display: inline-block; }
+        .img-wrap img { cursor: pointer; transition: opacity 0.2s; max-width: 100%; height: auto; }
+        .img-wrap img:hover { opacity: 0.85; }
+        .img-size-tooltip {
+            position: absolute; top: 8px; right: 8px;
+            background: rgba(0,0,0,0.7); color: #fff;
+            padding: 4px 10px; border-radius: 4px;
+            font-size: 12px; pointer-events: none;
+            display: none; z-index: 10;
+            white-space: nowrap;
+        }
+        .img-wrap:hover .img-size-tooltip { display: block; }
+
+        /* 툴바 */
+        .toolbar {
+            position: fixed; top: 0; left: 0; right: 0;
+            background: #333; color: #fff; padding: 10px 20px; z-index: 1000;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .toolbar span { font-size: 13px; }
+        .toolbar button { background: #4a90d9; color: #fff; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 14px; }
+        .toolbar button:hover { background: #357abd; }
+        .content { margin-top: 50px; }
+
+        /* 숨김 파일 인풋 */
+        .hidden-input { display: none; }
+
+        @media print {
+            .toolbar { display: none !important; }
+            .content { margin-top: 0 !important; }
+            .img-size-tooltip { display: none !important; }
+            [contenteditable="true"] { border: none !important; }
+        }
+    </style>
+</head>
+<body>
+    <div class="toolbar">
+        <span>텍스트 클릭 = 수정 | 이미지 클릭 = 교체 | 이미지 hover = 사이즈 표시</span>
+        <button onclick="window.print()">인쇄 / PDF 저장</button>
+    </div>
+    <input type="file" id="imgInput" class="hidden-input" accept="image/*">
+
+    <div class="container content">
+<div class="txt-manual">
+<!--휴가공지사항시작-->
+<div style="width:860px;margin:0 auto;"></div>
+<!--휴가공지사항끝-->
+<!-- 상품상세 공통정보 관리를 상세정보 상단에 노출-->
+<div style="width:860px;margin:0 auto;"></div><!--디자인픽스 튜닝 상단 공통 정보-->
+<div align="center" style="text-align: center;"><br/></div><div align="center" style="text-align: center;"><br/></div><div align="center" style="text-align: center;"><br/></div><div align="center" style="text-align: center;"><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span contenteditable="true" style="font-size: 24pt;"><b>더퀸 팔찌</b></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span contenteditable="true" style="font-size: 12pt;">순도 99.5%</span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 12pt;"><br/></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 12pt;"><br/></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 12pt;"><br/></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 12pt;"><span class="img-wrap"><img alt="1000001008_01_232553.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/240225/1000001008_01_232553.jpg" title="1000001008_01_232553.jpg"/><span class="img-size-tooltip"></span></span></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 12pt;"><br/></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 12pt;"></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 12pt;"><br/></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 12pt;"><br/></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 12pt;"></span></p><p align="center" contenteditable="true" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><b style="font-size: 18.6667px;">여성스러운 라인과 왕실의 여왕</b></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span contenteditable="true" data-sheets-root="1" data-sheets-userformat='{"2":641,"3":{"1":0},"10":1,"12":0}' data-sheets-value='{"1":2,"2":"[여성스러운 라인과 왕실의 여왕]\n펜던트의 정교한 여왕 조각이 돋보이며\n현대적인 우아함이 느껴지는 목걸이입니다\n두 줄의 스타일이 다른 체인을 구성하여\n여왕의 실루엣과 조화를 이루는 스타일입니다"}' style="color: rgb(0, 0, 0); text-align: start; font-size: 10pt; font-family: Arial;">펜던트의 정교한 여왕 조각이 돋보이며<br/>현대적인 우아함이 느껴지는 팔찌입니다.<br/>두 줄의 스타일이 다른 체인을 구성하여<br/>여왕의 실루엣과 조화를 이루는 스타일입니다.</span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 12pt;"></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 12pt;"><br/></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 12pt;"><br/></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 12pt;"><br style="clear:both;"/><span class="img-wrap"><img alt="1000001008_02_232553.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/240225/1000001008_02_232553.jpg" title="1000001008_02_232553.jpg"/><span class="img-size-tooltip"></span></span></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 12pt;"><br/></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 12pt;"></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 12pt;"><br/></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 12pt;"><br style="clear:both;"/><span class="img-wrap"><img alt="1000001008_03_232554.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/240225/1000001008_03_232554.jpg" title="1000001008_03_232554.jpg"/><span class="img-size-tooltip"></span></span></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 12pt;"><br/></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 12pt;"></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 12pt;"><br/></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 12pt;"><br style="clear:both;"/><span class="img-wrap"><img alt="1000001008_04_232554.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/240225/1000001008_04_232554.jpg" title="1000001008_04_232554.jpg"/><span class="img-size-tooltip"></span></span></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 12pt;"><br/></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 12pt;"></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 12pt;"><br/></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 12pt;"></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 12pt;"></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 12pt;"></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 12pt;"><br/></span></p><p align="center" contenteditable="true" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><b style="font-size: 18pt;">제품상세</b><span style="font-size: 12pt;"><br style="clear:both;"/><span class="img-wrap"><img alt="IMG_8247_3_185100.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/240226/IMG_8247_3_185100.jpg" title="IMG_8247_3_185100.jpg"/><span class="img-size-tooltip"></span></span></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span class="img-wrap"><img alt="IMG_8234_3_185225.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/240226/IMG_8234_3_185225.jpg" title="IMG_8234_3_185225.jpg"/><span class="img-size-tooltip"></span></span><br style="clear:both;"/><span style="font-size: 12pt;"><br style="clear:both;"/><br style="clear:both;"/><br/></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 12pt;"><br/></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 12pt;"><br/></span></p><p align="center" contenteditable="true" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><b style="font-size: 18pt;">제품크기</b><span style="font-size: 10pt;"></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><br/></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span contenteditable="true" style="font-size: 14.6667px; text-align: start;">11.25g 17cm 기준</span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 14.6667px; text-align: start;"><br/></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 12pt;"></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 12pt;"><br/></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 12pt;"><br style="clear:both;"/><span class="img-wrap"><img alt="1000001008_07_232556.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/240225/1000001008_07_232556.jpg" title="1000001008_07_232556.jpg"/><span class="img-size-tooltip"></span></span></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 12pt;"><br/></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 12pt;"></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 12pt;"> </span></p></div>
+<div style="width:860px;margin:0 auto;"></div>
+</div>
+    </div>
+
+    <script>
+        const fileInput = document.getElementById('imgInput');
+        let targetImg = null;
+
+        document.querySelectorAll('.img-wrap img').forEach(img => {
+            img.addEventListener('click', () => {
+                targetImg = img;
+                fileInput.click();
+            });
+        });
+
+        fileInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file && targetImg) {
+                const reader = new FileReader();
+                reader.onload = (ev) => {
+                    targetImg.src = ev.target.result;
+                    updateTooltip(targetImg);
+                };
+                reader.readAsDataURL(file);
+            }
+            fileInput.value = '';
+        });
+
+        function updateTooltip(img) {
+            const tooltip = img.parentElement.querySelector('.img-size-tooltip');
+            if (tooltip) {
+                const update = () => {
+                    tooltip.textContent = img.naturalWidth + ' x ' + img.naturalHeight + ' px';
+                };
+                if (img.complete && img.naturalWidth) update();
+                else img.addEventListener('load', update, { once: true });
+            }
+        }
+
+        document.querySelectorAll('.img-wrap img').forEach(img => {
+            updateTooltip(img);
+        });
+    </script>
+</body>
+</html>

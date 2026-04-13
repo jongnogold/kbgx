@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고래꼬리반지</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Malgun Gothic', sans-serif; background: #fff; }
+        .container { max-width: 860px; margin: 0 auto; padding: 20px; }
+
+        /* 텍스트 편집 (contenteditable 적용된 요소) */
+        [contenteditable="true"] { border: 1px dashed transparent; padding: 2px 4px; transition: border-color 0.2s; }
+        [contenteditable="true"]:hover { border-color: #ccc; }
+        [contenteditable="true"]:focus { border-color: #4a90d9; outline: none; background: #fffde7; }
+
+        /* 이미지 */
+        .img-wrap { position: relative; display: inline-block; }
+        .img-wrap img { cursor: pointer; transition: opacity 0.2s; max-width: 100%; height: auto; }
+        .img-wrap img:hover { opacity: 0.85; }
+        .img-size-tooltip {
+            position: absolute; top: 8px; right: 8px;
+            background: rgba(0,0,0,0.7); color: #fff;
+            padding: 4px 10px; border-radius: 4px;
+            font-size: 12px; pointer-events: none;
+            display: none; z-index: 10;
+            white-space: nowrap;
+        }
+        .img-wrap:hover .img-size-tooltip { display: block; }
+
+        /* 툴바 */
+        .toolbar {
+            position: fixed; top: 0; left: 0; right: 0;
+            background: #333; color: #fff; padding: 10px 20px; z-index: 1000;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .toolbar span { font-size: 13px; }
+        .toolbar button { background: #4a90d9; color: #fff; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 14px; }
+        .toolbar button:hover { background: #357abd; }
+        .content { margin-top: 50px; }
+
+        /* 숨김 파일 인풋 */
+        .hidden-input { display: none; }
+
+        @media print {
+            .toolbar { display: none !important; }
+            .content { margin-top: 0 !important; }
+            .img-size-tooltip { display: none !important; }
+            [contenteditable="true"] { border: none !important; }
+        }
+    </style>
+</head>
+<body>
+    <div class="toolbar">
+        <span>텍스트 클릭 = 수정 | 이미지 클릭 = 교체 | 이미지 hover = 사이즈 표시</span>
+        <button onclick="window.print()">인쇄 / PDF 저장</button>
+    </div>
+    <input type="file" id="imgInput" class="hidden-input" accept="image/*">
+
+    <div class="container content">
+<div class="txt-manual">
+<!--휴가공지사항시작-->
+<div style="width:860px;margin:0 auto;"></div>
+<!--휴가공지사항끝-->
+<!-- 상품상세 공통정보 관리를 상세정보 상단에 노출-->
+<div style="width:860px;margin:0 auto;"></div><!--디자인픽스 튜닝 상단 공통 정보-->
+<p align="center" style="text-align: center; "><span style="font-size: 24pt;"> </span></p><p align="center" style="text-align: center; "><span contenteditable="true" style="font-size: 24pt;"><b>고래꼬리반지</b></span></p><p align="center" style="text-align: center; "><span contenteditable="true" style="font-size: 12pt;">순도99.5%</span></p><p align="center" style="text-align: center; "><span style="font-size: 12pt;"> </span></p><p align="center" style="text-align: center; "><span style="font-size: 12pt;"> </span></p><p align="center" style="text-align: center; "><span style="font-size: 12pt;"><span class="img-wrap"><img alt="1_001648.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/230212/1_001648.jpg" title="1_001648.jpg"/><span class="img-size-tooltip"></span></span><br style="clear:both;"/> </span></p><p align="center" style="text-align: center; "><span style="font-size: 12pt;"> </span></p><p align="center" style="text-align: center; "><span style="font-size: 12pt;"> </span></p><p align="center" style="text-align: center; "><span contenteditable="true" style="font-size: 16px;">고래의 꼬리를 모티브로 제작한 순금반지로</span></p><p align="center" style="text-align: center; "><span contenteditable="true" style="font-size: 16px;">고래는 동양에서는 고래를 보게 되면 행운을 가져다주고</span></p><p align="center" style="text-align: center; "><span contenteditable="true" style="font-size: 16px;">신성한 동물로 여겨진다는 유래가 있습니다.</span></p><p align="center" style="text-align: center; "><span style="font-size: 16px;"> </span></p><p align="center" style="text-align: center; "><span contenteditable="true" style="font-size: 16px;">서양에서는 강인하고 힘이 쎌 때</span></p><p align="center" style="text-align: center; "><span contenteditable="true" style="font-size: 16px;">고래 같다는 표현을 사용하였다 하여</span></p><p align="center" style="text-align: center; "><span contenteditable="true" style="font-size: 16px;">고래꼬리의 모양의 귀중품을 착용하는 것은</span></p><p align="center" style="text-align: center; "><span contenteditable="true" style="font-size: 16px;">나쁜 기운과 악으로부터 수호하고</span></p><p align="center" style="text-align: center; "> </p><p align="center" style="text-align: center; "><span contenteditable="true" style="font-size: 16px;">행운을 물어다주는 뜻을 담고 있습니다.</span></p><p align="center" style="text-align: center; "><span style="font-size: 16px;"> </span></p><p align="center" style="text-align: center; "><span style="font-size: 16px;"> </span></p><p align="center" style="text-align: center; "><span style="font-size: 16px;"> </span></p><p align="center" style="text-align: center; "><span style="font-size: 16px;"><span class="img-wrap"><img alt="2_001716.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/230212/2_001716.jpg" title="2_001716.jpg"/><span class="img-size-tooltip"></span></span><br style="clear:both;"/> </span></p><p align="center" style="text-align: center; "> </p><p align="center" style="text-align: center; "><span style="font-size: 12pt;"> </span></p><p align="center" style="text-align: center; "><span style="font-size: 12pt;"> </span></p><p align="center" style="text-align: center; "><span style="font-size: 12pt;"><span class="img-wrap"><img alt="5_001728.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/230212/5_001728.jpg" title="5_001728.jpg"/><span class="img-size-tooltip"></span></span><br style="clear:both;"/> </span></p><p align="center" style="text-align: center; "> </p><p align="center" style="text-align: center; "> </p><p align="center" style="text-align: center; "><span style="font-size: 16px;"> </span></p><p align="center" style="text-align: center; "><span style="font-size: 16px;"><span class="img-wrap"><img alt="6_001736.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/230212/6_001736.jpg" title="6_001736.jpg"/><span class="img-size-tooltip"></span></span><br style="clear:both;"/> </span></p><p align="center" style="text-align: center; "> </p><p align="center" style="text-align: center; "><span style="font-size: 16px;"> </span></p><p align="center" style="text-align: center; "><span style="font-size: 16px;"> </span></p><p align="center" style="text-align: center; "><span style="font-size: 16px;"><span class="img-wrap"><img alt="7_001750.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/230212/7_001750.jpg" title="7_001750.jpg"/><span class="img-size-tooltip"></span></span><br style="clear:both;"/> </span></p><p align="center" style="text-align: center; "><span style="font-size: 16px;"> </span></p><p align="center" style="text-align: center; "><span style="font-size: 16px;"> </span></p><p align="center" style="text-align: center; "><span style="font-size: 16px;"><span class="img-wrap"><img alt="3_001759.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/230212/3_001759.jpg" title="3_001759.jpg"/><span class="img-size-tooltip"></span></span><br style="clear:both;"/> </span></p><p align="center" style="text-align: center; "><span style="font-size: 16px;"> </span></p><p align="center" style="text-align: center; "><span style="font-size: 16px;"> </span></p><p align="center" style="text-align: center; "><span style="font-size: 16px;"><span class="img-wrap"><img alt="4_001807.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/230212/4_001807.jpg" title="4_001807.jpg"/><span class="img-size-tooltip"></span></span><br style="clear:both;"/><br style="clear:both;"/></span><br/><br style="clear:both;"/><br/><span contenteditable="true" style="font-size: 18pt;"><b>사이즈</b></span></p><p align="center" style="text-align: center; "><span style="font-size: 24px;"><b><br/></b></span></p><p align="center" style="text-align: center; "><span style="font-size: 24px;"><b><span class="img-wrap"><img alt="8_001826.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/230212/8_001826.jpg" title="8_001826.jpg"/><span class="img-size-tooltip"></span></span></b></span></p><p><br/></p><p><br/></p><p><br/></p>
+<div style="width:860px;margin:0 auto;"></div>
+</div>
+    </div>
+
+    <script>
+        const fileInput = document.getElementById('imgInput');
+        let targetImg = null;
+
+        document.querySelectorAll('.img-wrap img').forEach(img => {
+            img.addEventListener('click', () => {
+                targetImg = img;
+                fileInput.click();
+            });
+        });
+
+        fileInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file && targetImg) {
+                const reader = new FileReader();
+                reader.onload = (ev) => {
+                    targetImg.src = ev.target.result;
+                    updateTooltip(targetImg);
+                };
+                reader.readAsDataURL(file);
+            }
+            fileInput.value = '';
+        });
+
+        function updateTooltip(img) {
+            const tooltip = img.parentElement.querySelector('.img-size-tooltip');
+            if (tooltip) {
+                const update = () => {
+                    tooltip.textContent = img.naturalWidth + ' x ' + img.naturalHeight + ' px';
+                };
+                if (img.complete && img.naturalWidth) update();
+                else img.addEventListener('load', update, { once: true });
+            }
+        }
+
+        document.querySelectorAll('.img-wrap img').forEach(img => {
+            updateTooltip(img);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>통뱅글팔찌</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Malgun Gothic', sans-serif; background: #fff; }
+        .container { max-width: 860px; margin: 0 auto; padding: 20px; }
+
+        /* 텍스트 편집 (contenteditable 적용된 요소) */
+        [contenteditable="true"] { border: 1px dashed transparent; padding: 2px 4px; transition: border-color 0.2s; }
+        [contenteditable="true"]:hover { border-color: #ccc; }
+        [contenteditable="true"]:focus { border-color: #4a90d9; outline: none; background: #fffde7; }
+
+        /* 이미지 */
+        .img-wrap { position: relative; display: inline-block; }
+        .img-wrap img { cursor: pointer; transition: opacity 0.2s; max-width: 100%; height: auto; }
+        .img-wrap img:hover { opacity: 0.85; }
+        .img-size-tooltip {
+            position: absolute; top: 8px; right: 8px;
+            background: rgba(0,0,0,0.7); color: #fff;
+            padding: 4px 10px; border-radius: 4px;
+            font-size: 12px; pointer-events: none;
+            display: none; z-index: 10;
+            white-space: nowrap;
+        }
+        .img-wrap:hover .img-size-tooltip { display: block; }
+
+        /* 툴바 */
+        .toolbar {
+            position: fixed; top: 0; left: 0; right: 0;
+            background: #333; color: #fff; padding: 10px 20px; z-index: 1000;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .toolbar span { font-size: 13px; }
+        .toolbar button { background: #4a90d9; color: #fff; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 14px; }
+        .toolbar button:hover { background: #357abd; }
+        .content { margin-top: 50px; }
+
+        /* 숨김 파일 인풋 */
+        .hidden-input { display: none; }
+
+        @media print {
+            .toolbar { display: none !important; }
+            .content { margin-top: 0 !important; }
+            .img-size-tooltip { display: none !important; }
+            [contenteditable="true"] { border: none !important; }
+        }
+    </style>
+</head>
+<body>
+    <div class="toolbar">
+        <span>텍스트 클릭 = 수정 | 이미지 클릭 = 교체 | 이미지 hover = 사이즈 표시</span>
+        <button onclick="window.print()">인쇄 / PDF 저장</button>
+    </div>
+    <input type="file" id="imgInput" class="hidden-input" accept="image/*">
+
+    <div class="container content">
+<div class="txt-manual">
+<!--휴가공지사항시작-->
+<div style="width:860px;margin:0 auto;"></div>
+<!--휴가공지사항끝-->
+<!-- 상품상세 공통정보 관리를 상세정보 상단에 노출-->
+<div style="width:860px;margin:0 auto;"></div><!--디자인픽스 튜닝 상단 공통 정보-->
+<p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"><span contenteditable="true" style="font-size: 24pt;"><b>순금 통뱅글 팔찌</b></span></p><p align="center" style="text-align: center; line-height: 1.8;"><span contenteditable="true" style="font-size: 12pt;">순도 99.5%</span></p><p align="center" style="text-align: center; line-height: 1.8;"><span contenteditable="true" style="font-size: 10pt;">- 사이즈선택 17cm~19.5cm</span></p><p align="center" style="text-align: center; line-height: 1.8;"><span contenteditable="true" style="font-size: 10pt;">- 본상품은 18K장식이 포함되지 않습니다.</span></p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"><span class="img-wrap"><img alt="01_210737.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/230601/01_210737.jpg" title="01_210737.jpg"/><span class="img-size-tooltip"></span></span></p><p align="center" style="text-align: center;"> </p><div align="center" style="text-align: center;"><span contenteditable="true" style="font-size: 14pt;"><b>가볍게 편하게 매력있게</b></span> </div><div align="center" style="text-align: center;"><div align="center"><span contenteditable="true" style="font-size: 10pt;">속이 비어 있는 파이프 형식으로 된 순금팔찌 입니다.</span></div><div align="center"><span contenteditable="true" style="font-size: 10pt;">중량대비 크기가 큰 편이 동일중량보다 부피감이 큽니다.</span></div><div align="center"><span contenteditable="true" style="font-size: 10pt;">겉면을 무광쓰지로 마감하여 심플 이즈 베스트가</span></div><div align="center"><span contenteditable="true" style="font-size: 10pt;">무엇인지 보여주는 순금 팔찌입니다.</span></div><div align="center"><span style="font-size: 10pt;"><br/></span></div><div align="center"><span style="font-size: 10pt;"><br/></span></div><div align="center"><span style="font-size: 10pt;"> </span></div></div><p align="center" style="text-align: center;"><span class="img-wrap"><img alt="02_210738.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/230601/02_210738.jpg" title="02_210738.jpg"/><span class="img-size-tooltip"></span></span></p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"><span contenteditable="true" style="font-size: 12pt;">﻿왼쪽(유광), 오른쪽(무광)</span> </p><p align="center" style="text-align: center;"><br style="clear:both;"/><span class="img-wrap"><img alt="03_210738.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/230601/03_210738.jpg" title="03_210738.jpg"/><span class="img-size-tooltip"></span></span></p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"><br style="clear:both;"/><span class="img-wrap"><img alt="04_210739.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/230601/04_210739.jpg" title="04_210739.jpg"/><span class="img-size-tooltip"></span></span></p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"><span contenteditable="true" style="font-size: 12pt;">위(무광), 아래(유광)</span></p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"><span contenteditable="true" style="font-size: 18pt;"><b>특징</b></span></p><p align="center" style="text-align: center;"><br style="clear:both;"/><span class="img-wrap"><img alt="05_210739.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/230601/05_210739.jpg" title="05_210739.jpg"/><span class="img-size-tooltip"></span></span></p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"><span contenteditable="true" style="font-size: 12pt;">팔찌 안이 비어 있는 제품입니다.</span></p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"><span contenteditable="true" style="font-size: 18pt;"><b>착용방법</b></span></p><p align="center" style="text-align: center;"><br style="clear:both;"/><span class="img-wrap"><img alt="06_210740.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/230601/06_210740.jpg" title="06_210740.jpg"/><span class="img-size-tooltip"></span></span></p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"><span contenteditable="true" style="font-size: 12pt;">팔찌를 양쪽으로 당기면 벌어집니다.</span></p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"><br style="clear:both;"/><span class="img-wrap"><img alt="07_210740.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/230601/07_210740.jpg" title="07_210740.jpg"/><span class="img-size-tooltip"></span></span></p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"><span contenteditable="true" style="font-size: 12pt;">통뱅글팔찌를 양쪽으로 당긴 상태에서</span></p><p align="center" style="text-align: center;"><span contenteditable="true" style="font-size: 12pt;">착용가능할 만큼의 간격만 휘어주시면</span></p><p align="center" style="text-align: center;"><span contenteditable="true" style="font-size: 12pt;">팔찌를 변형없이 착용할 수 있습니다.</span></p><p align="center" style="text-align: center;"> <span contenteditable="true" style="font-size: 16px;">너무 무리하게 휘어버리면 팔찌가</span></p><p align="center" style="text-align: center;"><span contenteditable="true" style="font-size: 16px;">파손 될 수 있으니 </span><span contenteditable="true" style="font-size: 16px;">조심해주세요.</span></p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"><span class="img-wrap"><img alt="08_210740.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/230601/08_210740.jpg" title="08_210740.jpg"/><span class="img-size-tooltip"></span></span></p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"><span contenteditable="true" style="font-size: 12pt;">팔찌를 탈착용을 하다보면</span></p><p align="center" style="text-align: center;"><span contenteditable="true" style="font-size: 12pt;">팔찌 사이가 벌어질 수 있습니다.</span></p><p align="center" style="text-align: center;"><span contenteditable="true" style="font-size: 12pt;">이럴 때는 아래 사진처럼 해주시면</span></p><p align="center" style="text-align: center;"><span contenteditable="true" style="font-size: 12pt;">벌어진 간격을 해결할 수 있습니다.</span></p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"><span class="img-wrap"><img alt="09_210756.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/230601/09_210756.jpg" title="09_210756.jpg"/><span class="img-size-tooltip"></span></span></p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"><span contenteditable="true" style="font-size: 12pt;">팔찌를 양손으로 잡고 0.5~1cm 정도로 천천히</span></p><p align="center" style="text-align: center;"><span contenteditable="true" style="font-size: 12pt;">안쪽으로 살짝살짝 휘어주시면 원상복구됩니다.</span></p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"><span contenteditable="true" style="font-size: 18pt;"><b>옵션별 상세이미지</b></span></p><p align="center" style="text-align: center;"><br style="clear:both;"/><span class="img-wrap"><img alt="10_210757.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/230601/10_210757.jpg" title="10_210757.jpg"/><span class="img-size-tooltip"></span></span></p><p align="center" style="text-align: center;"><span contenteditable="true" style="font-size: 14pt;"><b>순금 통뱅글 팔찌 유광타입</b></span></p><p align="center" style="text-align: center;"><br style="clear:both;"/><span class="img-wrap"><img alt="11_210757.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/230601/11_210757.jpg" title="11_210757.jpg"/><span class="img-size-tooltip"></span></span></p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"><span contenteditable="true" style="font-size: 12pt;">﻿모델이 착용한 제품은 18.75g 17cm 크기입니다.</span><span style="font-size: 12pt;"> </span></p><p align="center" style="text-align: center;"><br style="clear:both;"/><span class="img-wrap"><img alt="12_210757.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/230601/12_210757.jpg" title="12_210757.jpg"/><span class="img-size-tooltip"></span></span></p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"><br style="clear:both;"/><span class="img-wrap"><img alt="13_210758.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/230601/13_210758.jpg" title="13_210758.jpg"/><span class="img-size-tooltip"></span></span></p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"><br style="clear:both;"/><span class="img-wrap"><img alt="14_210758.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/230601/14_210758.jpg" title="14_210758.jpg"/><span class="img-size-tooltip"></span></span></p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"><br style="clear:both;"/><span class="img-wrap"><img alt="15_210759.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/230601/15_210759.jpg" title="15_210759.jpg"/><span class="img-size-tooltip"></span></span></p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"><br style="clear:both;"/><span class="img-wrap"><img alt="16_211537.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/230601/16_211537.jpg" title="16_211537.jpg"/><span class="img-size-tooltip"></span></span><br style="clear:both;"/> </p><p align="center" style="text-align: center;"><span contenteditable="true" style="font-size: 14pt;"><b>순금 통뱅글 팔찌 무광타입</b></span></p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"><span class="img-wrap"><img alt="17_210812.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/230601/17_210812.jpg" title="17_210812.jpg"/><span class="img-size-tooltip"></span></span></p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"><span contenteditable="true" style="font-size: 12pt;">모델이 착용한 크기는 18.75g 17cm입니다.</span></p><p align="center" style="text-align: center;"><br style="clear:both;"/><span class="img-wrap"><img alt="18_210812.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/230601/18_210812.jpg" title="18_210812.jpg"/><span class="img-size-tooltip"></span></span></p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"><br style="clear:both;"/><span class="img-wrap"><img alt="19_210813.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/230601/19_210813.jpg" title="19_210813.jpg"/><span class="img-size-tooltip"></span></span></p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"><br style="clear:both;"/><span class="img-wrap"><img alt="20_210813.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/230601/20_210813.jpg" title="20_210813.jpg"/><span class="img-size-tooltip"></span></span></p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"><br style="clear:both;"/><span class="img-wrap"><img alt="21_210813.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/230601/21_210813.jpg" title="21_210813.jpg"/><span class="img-size-tooltip"></span></span></p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"><span contenteditable="true" style="font-size: 18pt;"><b>크기</b></span></p><p align="center" style="text-align: center;"><br style="clear:both;"/><span class="img-wrap"><img alt="22_210814.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/230601/22_210814.jpg" title="22_210814.jpg"/><span class="img-size-tooltip"></span></span></p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"><span contenteditable="true" style="font-size: 10pt;">측정한 팔찌크기는 18.75g 17cm입니다.</span></p><p align="center" style="text-align: center;"><span contenteditable="true" style="font-size: 10pt;">측정방식에 따라 미세한 차이가 있을 수 있습니다.</span></p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p>
+<div style="width:860px;margin:0 auto;"></div>
+</div>
+    </div>
+
+    <script>
+        const fileInput = document.getElementById('imgInput');
+        let targetImg = null;
+
+        document.querySelectorAll('.img-wrap img').forEach(img => {
+            img.addEventListener('click', () => {
+                targetImg = img;
+                fileInput.click();
+            });
+        });
+
+        fileInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file && targetImg) {
+                const reader = new FileReader();
+                reader.onload = (ev) => {
+                    targetImg.src = ev.target.result;
+                    updateTooltip(targetImg);
+                };
+                reader.readAsDataURL(file);
+            }
+            fileInput.value = '';
+        });
+
+        function updateTooltip(img) {
+            const tooltip = img.parentElement.querySelector('.img-size-tooltip');
+            if (tooltip) {
+                const update = () => {
+                    tooltip.textContent = img.naturalWidth + ' x ' + img.naturalHeight + ' px';
+                };
+                if (img.complete && img.naturalWidth) update();
+                else img.addEventListener('load', update, { once: true });
+            }
+        }
+
+        document.querySelectorAll('.img-wrap img').forEach(img => {
+            updateTooltip(img);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>트윈오빗목걸이</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Malgun Gothic', sans-serif; background: #fff; }
+        .container { max-width: 860px; margin: 0 auto; padding: 20px; }
+
+        /* 텍스트 편집 (contenteditable 적용된 요소) */
+        [contenteditable="true"] { border: 1px dashed transparent; padding: 2px 4px; transition: border-color 0.2s; }
+        [contenteditable="true"]:hover { border-color: #ccc; }
+        [contenteditable="true"]:focus { border-color: #4a90d9; outline: none; background: #fffde7; }
+
+        /* 이미지 */
+        .img-wrap { position: relative; display: inline-block; }
+        .img-wrap img { cursor: pointer; transition: opacity 0.2s; max-width: 100%; height: auto; }
+        .img-wrap img:hover { opacity: 0.85; }
+        .img-size-tooltip {
+            position: absolute; top: 8px; right: 8px;
+            background: rgba(0,0,0,0.7); color: #fff;
+            padding: 4px 10px; border-radius: 4px;
+            font-size: 12px; pointer-events: none;
+            display: none; z-index: 10;
+            white-space: nowrap;
+        }
+        .img-wrap:hover .img-size-tooltip { display: block; }
+
+        /* 툴바 */
+        .toolbar {
+            position: fixed; top: 0; left: 0; right: 0;
+            background: #333; color: #fff; padding: 10px 20px; z-index: 1000;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .toolbar span { font-size: 13px; }
+        .toolbar button { background: #4a90d9; color: #fff; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 14px; }
+        .toolbar button:hover { background: #357abd; }
+        .content { margin-top: 50px; }
+
+        /* 숨김 파일 인풋 */
+        .hidden-input { display: none; }
+
+        @media print {
+            .toolbar { display: none !important; }
+            .content { margin-top: 0 !important; }
+            .img-size-tooltip { display: none !important; }
+            [contenteditable="true"] { border: none !important; }
+        }
+    </style>
+</head>
+<body>
+    <div class="toolbar">
+        <span>텍스트 클릭 = 수정 | 이미지 클릭 = 교체 | 이미지 hover = 사이즈 표시</span>
+        <button onclick="window.print()">인쇄 / PDF 저장</button>
+    </div>
+    <input type="file" id="imgInput" class="hidden-input" accept="image/*">
+
+    <div class="container content">
+<div class="txt-manual">
+<!--휴가공지사항시작-->
+<div style="width:860px;margin:0 auto;"></div>
+<!--휴가공지사항끝-->
+<!-- 상품상세 공통정보 관리를 상세정보 상단에 노출-->
+<div style="width:860px;margin:0 auto;"></div><!--디자인픽스 튜닝 상단 공통 정보-->
+<div align="center" style="text-align: center;"><br/></div><div align="center" style="text-align: center;"><br/></div><div align="center" style="text-align: center;"><br/></div><div align="center" style="text-align: center;"><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span contenteditable="true" style="font-size: 24pt;"><b>순금 트윈오빗 목걸이</b></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span contenteditable="true" style="font-size: 12pt;">순도 99.5%</span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 12pt;"><br/></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 12pt;"><br/></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 12pt;"> </span></p></div><div align="center" style="text-align: center;"><span class="img-wrap"><img alt="1000001028_01_203425.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/240318/1000001028_01_203425.jpg" title="1000001028_01_203425.jpg"/><span class="img-size-tooltip"></span></span><br style="clear:both;"/><br style="clear:both;"/><br style="clear:both;"/> </div><div align="center" style="text-align: center;"><br/></div><div align="center" style="text-align: center;"><br/></div><div align="center" style="text-align: center;"><br/></div><div align="center" style="text-align: center;"><b style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; font-size: 18.6667px; background-color: rgb(255, 255, 255);'>대칭되는 두 원형의 안정감</b><span data-sheets-root="1" data-sheets-userformat='{"2":641,"3":{"1":0},"10":1,"12":0}' data-sheets-value='{"1":2,"2":"[플로럴 모티브가 돋보이는 목걸이]\r\n화사한 봄의 정취를 담은 듯한 이 목걸이는\r\n각각의 꽃잎이 정밀하게 세공되어있어\r\n자연의 아름다움을 세련된 방식으로 표현합니다\r\n우아하고 고급스러운 스타일을 완성합니다"}' style="text-align: start; font-size: 10pt; font-family: Arial;"><br/><div align="center" style="text-align: center;"><div align="center"><div align="center"><span contenteditable="true" style="font-size: 13px; text-align: left; white-space-collapse: preserve; background-color: rgb(255, 255, 255);">두 개의 원형을 겹쳐 배치하여
+조화로운 형태가 매력적인 목걸이 입니다
+좌우 원형의 디자인을 다르게 제작하여
+섬세하면서도 우아한 느낌이 포인트입니다.</span> </div></div></div></span></div><div align="center" style="text-align: center;"><br/></div><div align="center" style="text-align: center;"><br/></div><div align="center" style="text-align: center;"><br style="clear:both;"/><span class="img-wrap"><img alt="1000001028_02_203517.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/240318/1000001028_02_203517.jpg" title="1000001028_02_203517.jpg"/><span class="img-size-tooltip"></span></span></div><div align="center" style="text-align: center;"><br/></div><div align="center" style="text-align: center;"><br/></div><div align="center" style="text-align: center;"><br style="clear:both;"/><span class="img-wrap"><img alt="1000001028_03_203518.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/240318/1000001028_03_203518.jpg" title="1000001028_03_203518.jpg"/><span class="img-size-tooltip"></span></span></div><div align="center" style="text-align: center;"><br/></div><div align="center" style="text-align: center;"><br/></div><div align="center" style="text-align: center;"><br style="clear:both;"/><span class="img-wrap"><img alt="1000001028_04_203518.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/240318/1000001028_04_203518.jpg" title="1000001028_04_203518.jpg"/><span class="img-size-tooltip"></span></span> </div><div align="center" style="text-align: center;"> </div><div align="center" style="text-align: center;"> </div><div align="center" style="text-align: center;"> </div><div align="center" style="text-align: center;"></div><div align="center" style="text-align: center;"><br/></div><div align="center" style="text-align: center;"><br/></div><div align="center" style="text-align: center;"><br/></div><div align="center" style="text-align: center;"><br/></div><div align="center" contenteditable="true" style="text-align: center;"><b style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255); font-size: 18pt;'>제품상세</b></div><div align="center" style="text-align: center;"><br/></div><div align="center" style="text-align: center;"><br/></div><div align="center" style="text-align: center;"><br/></div><div align="center" style="text-align: center;"><div align="center"><span class="img-wrap"><img alt="1000001028_05_203532.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/240318/1000001028_05_203532.jpg" title="1000001028_05_203532.jpg"/><span class="img-size-tooltip"></span></span></div><div align="center"><br/></div><div align="center"><br/></div><div align="center"><br style="clear:both;"/><span class="img-wrap"><img alt="1000001028_06_203532.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/240318/1000001028_06_203532.jpg" title="1000001028_06_203532.jpg"/><span class="img-size-tooltip"></span></span><br style="clear:both;"/></div><div align="center"><br style="clear:both;"/></div><div align="center"><br style="clear:both;"/></div><div align="center"><br style="clear:both;"/></div><div align="center"><br style="clear:both;"/><br/></div><div align="center"> </div></div><div align="center" style="text-align: center;"><br style="clear:both;"/> </div><div align="center" style="text-align: center;"><br/></div><div align="center" style="text-align: center;"><br/></div><div align="center" contenteditable="true" style="text-align: center;"><b style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; font-size: 18pt;'>제품크기</b> </div><div align="center" style="text-align: center;"><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 10pt;"></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><br/></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span contenteditable="true" style="font-size: 14.6667px; text-align: start;">11.25g 42cm 기준</span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 14.6667px; text-align: start;"><br/></span></p><p align="center" style='color: rgb(51, 51, 51); font-family: Roboto, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; background-color: rgb(255, 255, 255);'><span style="font-size: 14.6667px; text-align: start;"> </span></p></div><div align="center" style="text-align: center;"><span class="img-wrap"><img alt="1000001028_07_203542.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/240318/1000001028_07_203542.jpg" title="1000001028_07_203542.jpg"/><span class="img-size-tooltip"></span></span><br style="clear:both;"/><br style="clear:both;"/><br style="clear:both;"/><br style="clear:both;"/><br style="clear:both;"/> </div><div align="center" style="text-align: center;"><br/></div><div align="center" style="text-align: center;"><br/></div>
+<div style="width:860px;margin:0 auto;"></div>
+</div>
+    </div>
+
+    <script>
+        const fileInput = document.getElementById('imgInput');
+        let targetImg = null;
+
+        document.querySelectorAll('.img-wrap img').forEach(img => {
+            img.addEventListener('click', () => {
+                targetImg = img;
+                fileInput.click();
+            });
+        });
+
+        fileInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file && targetImg) {
+                const reader = new FileReader();
+                reader.onload = (ev) => {
+                    targetImg.src = ev.target.result;
+                    updateTooltip(targetImg);
+                };
+                reader.readAsDataURL(file);
+            }
+            fileInput.value = '';
+        });
+
+        function updateTooltip(img) {
+            const tooltip = img.parentElement.querySelector('.img-size-tooltip');
+            if (tooltip) {
+                const update = () => {
+                    tooltip.textContent = img.naturalWidth + ' x ' + img.naturalHeight + ' px';
+                };
+                if (img.complete && img.naturalWidth) update();
+                else img.addEventListener('load', update, { once: true });
+            }
+        }
+
+        document.querySelectorAll('.img-wrap img').forEach(img => {
+            updateTooltip(img);
+        });
+    </script>
+</body>
+</html>
