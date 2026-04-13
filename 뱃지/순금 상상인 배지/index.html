@@ -37,7 +37,7 @@
         .toolbar span { font-size: 13px; }
         .toolbar button { background: #4a90d9; color: #fff; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 14px; }
         .toolbar button:hover { background: #357abd; }
-        .content { margin-top: 50px; }
+        .content { margin-top: 0; }
 
         /* 숨김 파일 인풋 */
         .hidden-input { display: none; }
@@ -51,11 +51,6 @@
     </style>
 </head>
 <body>
-    <div class="toolbar">
-        <span>텍스트 클릭 = 수정 | 이미지 클릭 = 교체 | 이미지 hover = 사이즈 표시</span>
-        <button onclick="window.print()">인쇄 / PDF 저장</button>
-    </div>
-    <input type="file" id="imgInput" class="hidden-input" accept="image/*">
 
     <div class="container content">
 <div class="txt-manual">
@@ -64,49 +59,12 @@
 <!--휴가공지사항끝-->
 <!-- 상품상세 공통정보 관리를 상세정보 상단에 노출-->
 <div style="width:860px;margin:0 auto;"></div><!--디자인픽스 튜닝 상단 공통 정보-->
-<p align="center" style="text-align: center; "><b><span style="font-size: 24pt;"><br/></span></b></p><p align="center" contenteditable="true" style="text-align: center; "><b><span contenteditable="true" style="font-size: 24pt;">순금 상상인 배지</span></b> </p><p align="center" style="text-align: center; "><span style="font-size: 10pt;"> </span></p><p align="center" style="text-align: center; "><span contenteditable="true" style="font-size: 10pt;">*금형비별도*</span></p><p align="center" style="text-align: center; "><span contenteditable="true" style="font-size: 10pt;">디자인에 따라 초기1회 4~10만원 발생</span><span contenteditable="true" style="font-size: 10pt;">​</span><span contenteditable="true" style="font-size: 10pt;">﻿</span> </p><p align="center" style="text-align: center; "><b><span style="font-size: 24pt;"><br/></span></b></p><p align="center" style="text-align: center; "><b><span style="font-size: 24pt;"><span class="img-wrap"><img alt="info01_6_140329.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/221020/info01_6_140329.jpg" title="info01_6_140329.jpg"/><span class="img-size-tooltip"></span></span><br style="clear:both;"/><br/></span></b></p><p align="center" style="text-align: center; "> </p><p align="center" style="text-align: center; "> </p>
+<p align="center" style="text-align: center; "><b><span style="font-size: 24pt;"><br/></span></b></p><p align="center" style="text-align: center; "><b><span style="font-size: 24pt;">순금 상상인 배지</span></b> </p><p align="center" style="text-align: center; "><span style="font-size: 10pt;"> </span></p><p align="center" style="text-align: center; "><span style="font-size: 10pt;">*금형비별도*</span></p><p align="center" style="text-align: center; "><span style="font-size: 10pt;">디자인에 따라 초기1회 4~10만원 발생</span><span style="font-size: 10pt;">​</span><span style="font-size: 10pt;">﻿</span> </p><p align="center" style="text-align: center; "><b><span style="font-size: 24pt;"><br/></span></b></p><p align="center" style="text-align: center; "><b><span style="font-size: 24pt;"><span class="img-wrap"><img alt="info01_6_140329.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/221020/info01_6_140329.jpg" title="info01_6_140329.jpg"/></span><br style="clear:both;"/><br/></span></b></p><p align="center" style="text-align: center; "> </p><p align="center" style="text-align: center; "> </p>
 <div style="width:860px;margin:0 auto;"></div>
 </div>
     </div>
 
-    <script>
-        const fileInput = document.getElementById('imgInput');
-        let targetImg = null;
-
-        document.querySelectorAll('.img-wrap img').forEach(img => {
-            img.addEventListener('click', () => {
-                targetImg = img;
-                fileInput.click();
-            });
-        });
-
-        fileInput.addEventListener('change', (e) => {
-            const file = e.target.files[0];
-            if (file && targetImg) {
-                const reader = new FileReader();
-                reader.onload = (ev) => {
-                    targetImg.src = ev.target.result;
-                    updateTooltip(targetImg);
-                };
-                reader.readAsDataURL(file);
-            }
-            fileInput.value = '';
-        });
-
-        function updateTooltip(img) {
-            const tooltip = img.parentElement.querySelector('.img-size-tooltip');
-            if (tooltip) {
-                const update = () => {
-                    tooltip.textContent = img.naturalWidth + ' x ' + img.naturalHeight + ' px';
-                };
-                if (img.complete && img.naturalWidth) update();
-                else img.addEventListener('load', update, { once: true });
-            }
-        }
-
-        document.querySelectorAll('.img-wrap img').forEach(img => {
-            updateTooltip(img);
-        });
-    </script>
+    
+<script>function _kbgxH(){window.parent.postMessage({type:"kbgx-h",h:document.documentElement.scrollHeight},"*");}window.addEventListener("load",_kbgxH);window.addEventListener("resize",_kbgxH);new MutationObserver(_kbgxH).observe(document.body,{childList:!0,subtree:!0,attributes:!0});</script>
 </body>
 </html>
