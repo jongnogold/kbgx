@@ -29,13 +29,233 @@
 <p> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center; "><span style="font-size: 24pt;"><b>아니미 목걸이</b></span></p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center;"> </p><p align="center" style="text-align: center; "><span class="img-wrap"><img alt="info_animiN_01_140926.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/221024/info_animiN_01_140926.jpg" title="info_animiN_01_140926.jpg"/></span></p><p align="center" style="text-align: center; "> </p><p> </p><div align="center" style="text-align: center;"><br/></div><div align="center" style="text-align: center;"><span class="img-wrap"><img alt="info_animiN_02_140927.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/221024/info_animiN_02_140927.jpg" title="info_animiN_02_140927.jpg"/></span></div><p> </p><p align="center" style="text-align: center; "> </p><p> </p><div align="center" style="text-align: center;"><br/></div><div align="center" style="text-align: center;"><span class="img-wrap"><img alt="info_animiN_03_140927.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/221024/info_animiN_03_140927.jpg" title="info_animiN_03_140927.jpg"/></span></div><p> </p><p align="center" style="text-align: center; "> </p><p align="center" style="text-align: center; "> </p><p align="center" style="text-align: center; "> </p><p align="center" style="text-align: center; "> </p><p align="center" style="text-align: center; "> </p><p align="center" style="text-align: center; "> </p><p align="center" style="text-align: center; "> </p><p> </p><div align="center" style="text-align: center;"><b style="font-size: 18pt;">제품크기</b></div><div align="center" style="text-align: center;"><span class="img-wrap"><img alt="info_animiN_04_140928.jpg" class="js-smart-img" src="https://cdn-pro-web-153-231.cdn-nhncommerce.com/kbgx12_godomall_com/data/editor/goods/221024/info_animiN_04_140928.jpg" title="info_animiN_04_140928.jpg"/></span></div><div style="text-align: center;"><br/></div><div style="text-align: center;"><br/></div><div style="text-align: center;"><br/></div><div style="text-align: center;"><br/></div><div style="text-align: center;"><br/></div><div style="text-align: center;"><br/></div><p> </p>
 <div style="width:860px;margin:0 auto;"></div>
 </div>
-    
 <div class="kbgx-banner" data-kbgx-cat="목걸이" data-kbgx-slot="하단"></div>
-</div>
+    </div>
 
     
-<script src="../../../_공통/banners-config.js"></script>
-<script src="../../../_공통/banner-render.js"></script>
+<script>
+// 자동 생성 파일 - 대시보드 '배너 관리'가 관리합니다. 직접 편집하지 마세요.
+window.BANNER_CONFIG = {
+  "반지_상단": [
+    {
+      "image": "banners/반지_상단_1775796297304.jpg",
+      "uploaded": "2026-04-10T04:44:57.301Z",
+      "original": "곧.jpg",
+      "from": "00:00",
+      "to": "23:59",
+      "weekdays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "image": "banners/반지_상단_1775796373665.jpg",
+      "uploaded": "2026-04-10T04:46:13.655Z",
+      "original": "오늘출발.jpg",
+      "from": "15:52",
+      "to": "15:53",
+      "weekdays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  ],
+  "반지_하단": [
+    {
+      "image": "banners/반지_하단_1775802938039.jpg",
+      "uploaded": "2026-04-10T06:35:38.036Z",
+      "original": "8a16bc503a9b74457588b31c443504f5.jpg",
+      "from": "00:00",
+      "to": "23:59",
+      "weekdays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  ]
+};
+
+</script>
+<script>
+// 동적 배너 런타임 - 상세페이지가 사용자 브라우저에서 시간/요일에 따라 배너를 교체합니다.
+// 자동 생성 파일 아님. 직접 수정 가능.
+//
+// 사용법: 상세페이지에서
+//   <div class="kbgx-banner" data-kbgx-cat="반지" data-kbgx-slot="상단"></div>
+//   <script src="..._공통/banners-config.js"></script>
+//   <script src="..._공통/banner-render.js"></script>
+//
+// 매 1초마다 카운트다운을 갱신하고, 분이 바뀔 때마다 활성 규칙을 재계산합니다.
+
+(function () {
+    'use strict';
+
+    function hhmmToMin(s) {
+        if (!s) return null;
+        var m = String(s).match(/^(\d{1,2}):(\d{2})$/);
+        if (!m) return null;
+        return parseInt(m[1], 10) * 60 + parseInt(m[2], 10);
+    }
+
+    function isRuleActive(rule, now) {
+        if (!rule) return false;
+        var wd = now.getDay();
+        var wds = Array.isArray(rule.weekdays) ? rule.weekdays : [0, 1, 2, 3, 4, 5, 6];
+        if (wds.indexOf(wd) < 0) return false;
+        var fromM = hhmmToMin(rule.from);
+        var toM = hhmmToMin(rule.to);
+        if (fromM == null || toM == null) return true; // 시간 미지정 → 하루 종일
+        var nowM = now.getHours() * 60 + now.getMinutes();
+        if (fromM <= toM) return nowM >= fromM && nowM <= toM;
+        return nowM >= fromM || nowM <= toM; // 자정을 넘는 구간
+    }
+
+    // 규칙의 "구체성" 점수. 낮을수록 더 구체적.
+    // (시간 범위 분) × (요일 수). 디폴트(하루 종일 매일)는 최대값이 되어 좁은 규칙에 밀림.
+    function ruleSpecificity(rule) {
+        var fromM = hhmmToMin(rule.from);
+        var toM = hhmmToMin(rule.to);
+        var windowSize;
+        if (fromM == null || toM == null) {
+            windowSize = 24 * 60;
+        } else if (fromM <= toM) {
+            windowSize = toM - fromM + 1;
+        } else {
+            windowSize = (24 * 60 - fromM) + toM + 1; // 자정 넘김
+        }
+        var wdCount = (Array.isArray(rule.weekdays) && rule.weekdays.length > 0)
+            ? rule.weekdays.length : 7;
+        return windowSize * wdCount;
+    }
+
+    function getActiveRule(cat, slot, now) {
+        var cfg = window.BANNER_CONFIG || {};
+        var rules = cfg[cat + '_' + slot];
+        if (!rules || !rules.length) return null;
+        var best = null;
+        var bestScore = Infinity;
+        for (var i = 0; i < rules.length; i++) {
+            if (!isRuleActive(rules[i], now)) continue;
+            var score = ruleSpecificity(rules[i]);
+            if (score < bestScore) {
+                best = rules[i];
+                bestScore = score;
+            }
+        }
+        return best;
+    }
+
+    // banners-config.js 의 image 필드는 "banners/foo.png" 처럼 _공통/ 기준 상대경로.
+    // banner-render.js 가 있는 디렉터리를 기준으로 BASE 를 계산.
+    function bannerBasePath() {
+        var scripts = document.getElementsByTagName('script');
+        for (var i = 0; i < scripts.length; i++) {
+            var src = scripts[i].src || '';
+            if (src.indexOf('banner-render.js') >= 0) {
+                return src.replace(/banner-render\.js(\?.*)?$/, '');
+            }
+        }
+        return 'https://jongnogold.github.io/kbgx/';
+    }
+
+    var BASE = bannerBasePath();
+
+    function encodePath(rel) {
+        return rel.split('/').map(encodeURIComponent).join('/');
+    }
+
+    function renderOne(el, now) {
+        var cat = el.getAttribute('data-kbgx-cat');
+        var slot = el.getAttribute('data-kbgx-slot');
+        if (!cat || !slot) return;
+        var rule = getActiveRule(cat, slot, now);
+        if (!rule || !rule.image) {
+            el.classList.add('kbgx-empty');
+            el.innerHTML = '';
+            return;
+        }
+        el.classList.remove('kbgx-empty');
+        var imgSrc = BASE + encodePath(rule.image);
+        var cacheBust = rule.uploaded ? '?v=' + Date.parse(rule.uploaded) : '';
+        var html = '<img src="' + imgSrc + cacheBust + '" alt="">';
+        if (rule.countdown) {
+            html += '<div class="kbgx-countdown" data-kbgx-cd="' + rule.countdown + '"></div>';
+        }
+        el.innerHTML = html;
+    }
+
+    function updateCountdown(el, now) {
+        var cdEl = el.querySelector('.kbgx-countdown');
+        if (!cdEl) return;
+        var target = cdEl.getAttribute('data-kbgx-cd');
+        var tm = hhmmToMin(target);
+        if (tm == null) return;
+        var nowM = now.getHours() * 60 + now.getMinutes();
+        var nowS = now.getSeconds();
+        if (nowM > tm) {
+            // 이미 마감 시간 지남
+            cdEl.style.display = 'none';
+            return;
+        }
+        var diffSec = (tm - nowM) * 60 - nowS;
+        if (diffSec < 0) {
+            cdEl.style.display = 'none';
+            return;
+        }
+        cdEl.style.display = '';
+        var h = Math.floor(diffSec / 3600);
+        var m = Math.floor((diffSec % 3600) / 60);
+        var s = diffSec % 60;
+        var txt;
+        if (h > 0) txt = '⏰ 마감까지 ' + h + '시간 ' + m + '분';
+        else if (m > 0) txt = '⏰ 마감까지 ' + m + '분 ' + s + '초';
+        else txt = '⏰ 마감까지 ' + s + '초';
+        cdEl.textContent = txt;
+    }
+
+    function tick(force) {
+        var now = new Date();
+        var els = document.querySelectorAll('.kbgx-banner');
+        var curMin = now.getHours() * 60 + now.getMinutes();
+        if (force || window.__kbgxLastMin !== curMin) {
+            for (var i = 0; i < els.length; i++) renderOne(els[i], now);
+            window.__kbgxLastMin = curMin;
+        }
+        for (var j = 0; j < els.length; j++) updateCountdown(els[j], now);
+    }
+
+    // 외부(preview.html 등)에서 placeholder 의 data-kbgx-cat 을 바꾼 뒤
+    // 즉시 재렌더하고 싶을 때 호출. force=true 면 분 캐시 무시.
+    window.__kbgxBannerTick = tick;
+
+    function start() {
+        tick(true);
+        setInterval(function () { tick(false); }, 1000);
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', start);
+    } else {
+        start();
+    }
+})();
+
+</script>
 <script>function _kbgxH(){window.parent.postMessage({type:"kbgx-h",h:document.documentElement.scrollHeight},"*");}window.addEventListener("load",_kbgxH);window.addEventListener("resize",_kbgxH);new MutationObserver(_kbgxH).observe(document.body,{childList:!0,subtree:!0,attributes:!0});</script>
 </body>
 </html>
