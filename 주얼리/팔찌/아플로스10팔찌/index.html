@@ -5,50 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>아플로스10팔찌</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Malgun Gothic', sans-serif; background: #fff; }
-        .container { max-width: 860px; margin: 0 auto; padding: 20px; }
-
-        /* 텍스트 편집 (contenteditable 적용된 요소) */
-        [contenteditable="true"] { border: 1px dashed transparent; padding: 2px 4px; transition: border-color 0.2s; }
-        [contenteditable="true"]:hover { border-color: #ccc; }
-        [contenteditable="true"]:focus { border-color: #4a90d9; outline: none; background: #fffde7; }
-
-        /* 이미지 */
-        .img-wrap { position: relative; display: inline-block; }
-        .img-wrap img { cursor: pointer; transition: opacity 0.2s; max-width: 100%; height: auto; }
-        .img-wrap img:hover { opacity: 0.85; }
-        .img-size-tooltip {
-            position: absolute; top: 8px; right: 8px;
-            background: rgba(0,0,0,0.7); color: #fff;
-            padding: 4px 10px; border-radius: 4px;
-            font-size: 12px; pointer-events: none;
-            display: none; z-index: 10;
-            white-space: nowrap;
-        }
-        .img-wrap:hover .img-size-tooltip { display: block; }
-
-        /* 툴바 */
-        .toolbar {
-            position: fixed; top: 0; left: 0; right: 0;
-            background: #333; color: #fff; padding: 10px 20px; z-index: 1000;
-            display: flex; justify-content: space-between; align-items: center;
-        }
-        .toolbar span { font-size: 13px; }
-        .toolbar button { background: #4a90d9; color: #fff; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 14px; }
-        .toolbar button:hover { background: #357abd; }
-        .content { margin-top: 0; }
-
-        /* 숨김 파일 인풋 */
-        .hidden-input { display: none; }
-
-        @media print {
-            .toolbar { display: none !important; }
-            .content { margin-top: 0 !important; }
-            .img-size-tooltip { display: none !important; }
-            [contenteditable="true"] { border: none !important; }
-        }
-    </style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Malgun Gothic", sans-serif; background: #fff; }
+  .container { max-width: 860px; margin: 0 auto; padding: 20px; }
+  .img-wrap { position: relative; display: inline-block; }
+  .img-wrap img { max-width: 100%; height: auto; }
+  .kbgx-banner { width: 100%; margin: 14px 0; }
+  .kbgx-banner img { width: 100%; height: auto; display: block; border-radius: 4px; }
+  .kbgx-banner.kbgx-empty { display: none; }
+  .kbgx-banner .kbgx-countdown { background: #c0392b; color: #fff; padding: 10px 14px; text-align: center; font-weight: 700; font-size: 15px; border-radius: 0 0 4px 4px; }
+</style>
 </head>
 <body>
 
