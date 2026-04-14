@@ -361,6 +361,19 @@ window.BANNER_CONFIG = {
 
     var BASE = bannerBasePath();
 
+    // 런타임 스타일 override (기존 빌드된 페이지의 인라인 CSS 값을 후순위로 덮어씀)
+    (function injectStyle() {
+        var id = 'kbgx-runtime-style';
+        if (document.getElementById(id)) return;
+        var css =
+            '.kbgx-banner-group { width: 100%; margin-bottom: 10px; }' +
+            '.kbgx-banner-group:last-child { margin-bottom: 0; }';
+        var style = document.createElement('style');
+        style.id = id;
+        style.textContent = css;
+        (document.head || document.documentElement).appendChild(style);
+    })();
+
     function encodePath(rel) {
         return rel.split('/').map(encodeURIComponent).join('/');
     }
