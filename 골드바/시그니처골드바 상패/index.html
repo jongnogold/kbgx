@@ -13,6 +13,9 @@
   .kbgx-banner { width: 100%; margin: 14px 0; }
   .kbgx-banner img { width: 100%; height: auto; display: block; border-radius: 4px; }
   .kbgx-banner.kbgx-empty { display: none; }
+  .kbgx-banner-group { width: 100%; margin-bottom: 10px; }
+  .kbgx-banner-group:last-child { margin-bottom: 0; }
+  .kbgx-banner-group.kbgx-empty { display: none; }
   .kbgx-banner .kbgx-countdown { background: #c0392b; color: #fff; padding: 10px 14px; text-align: center; font-weight: 700; font-size: 15px; border-radius: 0 0 4px 4px; }
 </style>
 </head>
@@ -153,8 +156,8 @@ window.BANNER_CONFIG = {
   ],
   "골드바_상단_직배": [
     {
-      "image": "banners/골드바_상단_직배_1776151777310.jpg",
-      "uploaded": "2026-04-14T07:29:37.308Z",
+      "image": "banners/골드바_상단_직배_1776410316156.jpg",
+      "uploaded": "2026-04-17T07:18:36.171Z",
       "original": "직배.jpg",
       "from": "00:00",
       "to": "23:59",
@@ -166,7 +169,8 @@ window.BANNER_CONFIG = {
         4,
         5,
         6
-      ]
+      ],
+      "link": "https://www.kbgx.co.kr/board/view.php?bdId=notice&sno=7"
     }
   ]
 };
@@ -315,7 +319,13 @@ window.BANNER_CONFIG = {
         childEl.classList.remove('kbgx-empty');
         var imgSrc = BASE + encodePath(rule.image);
         var cacheBust = rule.uploaded ? '?v=' + Date.parse(rule.uploaded) : '';
-        var html = '<img src="' + imgSrc + cacheBust + '" alt="">';
+        var imgTag = '<img src="' + imgSrc + cacheBust + '" alt="">';
+        var html;
+        if (rule.link) {
+            html = '<a href="' + rule.link.replace(/"/g, '&quot;') + '" target="_blank" rel="noopener noreferrer" style="display:block;">' + imgTag + '</a>';
+        } else {
+            html = imgTag;
+        }
         if (rule.countdown) {
             html += '<div class="kbgx-countdown" data-kbgx-cd="' + rule.countdown + '"></div>';
         }
