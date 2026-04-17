@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>골드바 - iframe banner</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: transparent; }
+.kbgx-banner { width: 100%; }
+.kbgx-banner img { width: 100%; height: auto; display: block; }
+.kbgx-banner a { display: block; }
+.kbgx-banner.kbgx-empty { display: none; }
+.kbgx-banner-group { width: 100%; margin-bottom: 10px; }
+.kbgx-banner-group:last-child { margin-bottom: 0; }
+.kbgx-banner-group.kbgx-empty { display: none; }
+.kbgx-countdown { background: #c0392b; color: #fff; padding: 10px 14px; text-align: center; font-weight: 700; font-size: 15px; }
+</style>
+</head>
+<body>
+<div class="kbgx-banner" data-kbgx-cat="골드바" data-kbgx-slot="iframe"></div>
+<script>
+// 자동 생성 파일 - 대시보드 '배너 관리'가 관리합니다. 직접 편집하지 마세요.
+window.BANNER_CONFIG = {
+  "__groups__": {
+    "반지_상단": [
+      "기본"
+    ],
+    "반지_하단": [
+      "기본"
+    ],
+    "골드바_상단": [
+      "기본",
+      "직배"
+    ],
+    "골드바_iframe": [
+      "출고",
+      "직접배송"
+    ]
+  },
+  "반지_상단_기본": [
+    {
+      "image": "banners/반지_상단_1775796297304.jpg",
+      "uploaded": "2026-04-10T04:44:57.301Z",
+      "original": "곧.jpg",
+      "from": "00:00",
+      "to": "23:59",
+      "weekdays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "image": "banners/반지_상단_1775796373665.jpg",
+      "uploaded": "2026-04-10T04:46:13.655Z",
+      "original": "오늘출발.jpg",
+      "from": "12:20",
+      "to": "12:21",
+      "weekdays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  ],
+  "반지_하단_기본": [
+    {
+      "image": "banners/반지_하단_1775802938039.jpg",
+      "uploaded": "2026-04-10T06:35:38.036Z",
+      "original": "8a16bc503a9b74457588b31c443504f5.jpg",
+      "from": "00:00",
+      "to": "23:59",
+      "weekdays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  ],
+  "골드바_상단_기본": [
+    {
+      "image": "banners/골드바_상단_1776148570387.jpg",
+      "uploaded": "2026-04-14T06:36:10.383Z",
+      "original": "우체국 택배.jpg",
+      "from": "09:00",
+      "to": "14:00",
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "image": "banners/골드바_상단_1776148610623.jpg",
+      "uploaded": "2026-04-14T06:36:50.622Z",
+      "original": "CJ 택배.jpg",
+      "from": "14:01",
+      "to": "16:30",
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "image": "banners/골드바_상단_기본_1776152010771.jpg",
+      "uploaded": "2026-04-14T07:33:30.768Z",
+      "original": "우체국 택배2.jpg",
+      "from": "16:31",
+      "to": "08:59",
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "골드바_상단_직배": [
+    {
+      "image": "banners/골드바_상단_직배_1776410316156.jpg",
+      "uploaded": "2026-04-17T07:18:36.171Z",
+      "original": "직배.jpg",
+      "from": "00:00",
+      "to": "23:59",
+      "weekdays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "link": "https://www.kbgx.co.kr/board/view.php?bdId=notice&sno=7"
+    }
+  ],
+  "골드바_iframe_출고": [
+    {
+      "image": "banners/골드바_iframe_출고_1776427067469.jpg",
+      "uploaded": "2026-04-17T11:57:47.466Z",
+      "original": "우체국 평일 0900 1800.jpg",
+      "from": "09:00",
+      "to": "18:00",
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "image": "banners/골드바_iframe_출고_1776427087791.jpg",
+      "uploaded": "2026-04-17T11:58:07.789Z",
+      "original": "우체국 금요일1801 이후.jpg",
+      "from": "00:00",
+      "to": "23:59",
+      "weekdays": [
+        0,
+        6
+      ]
+    },
+    {
+      "image": "banners/골드바_iframe_출고_1776427116145.jpg",
+      "uploaded": "2026-04-17T11:58:36.142Z",
+      "original": "우체국 금요일1801 이후.jpg",
+      "from": "18:01",
+      "to": "23:59",
+      "weekdays": [
+        5
+      ]
+    },
+    {
+      "image": "banners/골드바_iframe_출고_1776427133118.jpg",
+      "uploaded": "2026-04-17T11:58:53.116Z",
+      "original": "평일 1431 1630.jpg",
+      "from": "14:31",
+      "to": "16:30",
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "골드바_iframe_직접배송": [
+    {
+      "image": "banners/골드바_iframe_직접배송_1776427504801.jpg",
+      "uploaded": "2026-04-17T12:05:04.798Z",
+      "original": "직배.jpg",
+      "from": "00:00",
+      "to": "23:59",
+      "weekdays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  ]
+};
+
+</script>
+<script>
+// 동적 배너 런타임 - 상세페이지가 사용자 브라우저에서 시간/요일에 따라 배너를 교체합니다.
+// 매 1초마다 카운트다운을 갱신하고, 분이 바뀔 때마다 활성 규칙을 재계산합니다.
+//
+// v1.6: 슬롯 하위 "그룹" 지원. 한 슬롯(상단/하단)에 여러 배너 자리를 나열할 수 있음.
+// 데이터 모델:
+//   window.BANNER_CONFIG = {
+//     "골드바_상단_배송": [규칙...],
+//     "골드바_상단_공지": [규칙...],
+//     "__groups__": { "골드바_상단": ["배송", "공지"] }  // 그룹 순서 (위→아래)
+//   }
+// 레거시 포맷 (배열 값 직접 저장)도 지원: "골드바_상단": [규칙...] → 단일 그룹으로 렌더.
+
+(function () {
+    'use strict';
+
+    var RESERVED_KEY = '__groups__';
+
+    function hhmmToMin(s) {
+        if (!s) return null;
+        var m = String(s).match(/^(\d{1,2}):(\d{2})$/);
+        if (!m) return null;
+        return parseInt(m[1], 10) * 60 + parseInt(m[2], 10);
+    }
+
+    function isRuleActive(rule, now) {
+        if (!rule) return false;
+        var wd = now.getDay();
+        var wds = Array.isArray(rule.weekdays) ? rule.weekdays : [0, 1, 2, 3, 4, 5, 6];
+        if (wds.indexOf(wd) < 0) return false;
+        var fromM = hhmmToMin(rule.from);
+        var toM = hhmmToMin(rule.to);
+        if (fromM == null || toM == null) return true; // 시간 미지정 → 하루 종일
+        var nowM = now.getHours() * 60 + now.getMinutes();
+        if (fromM <= toM) return nowM >= fromM && nowM <= toM;
+        return nowM >= fromM || nowM <= toM; // 자정을 넘는 구간
+    }
+
+    // 규칙의 "구체성" 점수. 낮을수록 더 구체적.
+    // (시간 범위 분) × (요일 수). 디폴트(하루 종일 매일)는 최대값이 되어 좁은 규칙에 밀림.
+    function ruleSpecificity(rule) {
+        var fromM = hhmmToMin(rule.from);
+        var toM = hhmmToMin(rule.to);
+        var windowSize;
+        if (fromM == null || toM == null) {
+            windowSize = 24 * 60;
+        } else if (fromM <= toM) {
+            windowSize = toM - fromM + 1;
+        } else {
+            windowSize = (24 * 60 - fromM) + toM + 1; // 자정 넘김
+        }
+        var wdCount = (Array.isArray(rule.weekdays) && rule.weekdays.length > 0)
+            ? rule.weekdays.length : 7;
+        return windowSize * wdCount;
+    }
+
+    // 슬롯 하위 그룹 목록 조회. 순서는 __groups__ 에 저장된 배열 우선, 없으면 등록 순서.
+    // 레거시 포맷(배열 직접 저장)도 단일 그룹 [""] 로 취급.
+    function listGroups(cat, slot) {
+        var cfg = window.BANNER_CONFIG || {};
+        var slotKey = cat + '_' + slot;
+        var groups = cfg[RESERVED_KEY] && cfg[RESERVED_KEY][slotKey];
+        if (Array.isArray(groups) && groups.length > 0) return groups.slice();
+        // __groups__ 없음: 레거시 배열 또는 자동 탐지
+        if (Array.isArray(cfg[slotKey])) return ['']; // 레거시: 그룹명 "" 로 단일 처리
+        // 키 스캔으로 fallback (가장 느슨, 등록 순서 보존)
+        var prefix = slotKey + '_';
+        var found = [];
+        for (var k in cfg) {
+            if (k === RESERVED_KEY) continue;
+            if (k.indexOf(prefix) === 0) {
+                found.push(k.substring(prefix.length));
+            }
+        }
+        return found;
+    }
+
+    function rulesFor(cat, slot, group) {
+        var cfg = window.BANNER_CONFIG || {};
+        var key = group ? (cat + '_' + slot + '_' + group) : (cat + '_' + slot);
+        var rules = cfg[key];
+        return Array.isArray(rules) ? rules : [];
+    }
+
+    function getActiveRule(cat, slot, group, now) {
+        var rules = rulesFor(cat, slot, group);
+        if (!rules.length) return null;
+        var best = null;
+        var bestScore = Infinity;
+        for (var i = 0; i < rules.length; i++) {
+            if (!isRuleActive(rules[i], now)) continue;
+            var score = ruleSpecificity(rules[i]);
+            if (score < bestScore) {
+                best = rules[i];
+                bestScore = score;
+            }
+        }
+        return best;
+    }
+
+    // banners-config.js 의 image 필드는 "banners/foo.png" 처럼 _공통/ 기준 상대경로.
+    // banner-render.js 가 있는 디렉터리를 기준으로 BASE 를 계산.
+    function bannerBasePath() {
+        var scripts = document.getElementsByTagName('script');
+        for (var i = 0; i < scripts.length; i++) {
+            var src = scripts[i].src || '';
+            if (src.indexOf('banner-render.js') >= 0) {
+                return src.replace(/banner-render\.js(\?.*)?$/, '');
+            }
+        }
+        return 'https://jongnogold.github.io/kbgx/';
+    }
+
+    var BASE = bannerBasePath();
+
+    // 런타임 스타일 override (기존 빌드된 페이지의 인라인 CSS 값을 후순위로 덮어씀)
+    (function injectStyle() {
+        var id = 'kbgx-runtime-style';
+        if (document.getElementById(id)) return;
+        var css =
+            '.kbgx-banner-group { width: 100%; margin-bottom: 10px; }' +
+            '.kbgx-banner-group:last-child { margin-bottom: 0; }';
+        var style = document.createElement('style');
+        style.id = id;
+        style.textContent = css;
+        (document.head || document.documentElement).appendChild(style);
+    })();
+
+    function encodePath(rel) {
+        return rel.split('/').map(encodeURIComponent).join('/');
+    }
+
+    // 한 그룹 자식 div 에 렌더. 활성 규칙이 없으면 빈(숨김) 상태.
+    function renderGroupChild(childEl, cat, slot, group, now) {
+        var rule = getActiveRule(cat, slot, group, now);
+        if (!rule || !rule.image) {
+            childEl.classList.add('kbgx-empty');
+            childEl.innerHTML = '';
+            return;
+        }
+        childEl.classList.remove('kbgx-empty');
+        var imgSrc = BASE + encodePath(rule.image);
+        var cacheBust = rule.uploaded ? '?v=' + Date.parse(rule.uploaded) : '';
+        var imgTag = '<img src="' + imgSrc + cacheBust + '" alt="">';
+        var html;
+        if (rule.link) {
+            html = '<a href="' + rule.link.replace(/"/g, '&quot;') + '" target="_blank" rel="noopener noreferrer" style="display:block;">' + imgTag + '</a>';
+        } else {
+            html = imgTag;
+        }
+        if (rule.countdown) {
+            html += '<div class="kbgx-countdown" data-kbgx-cd="' + rule.countdown + '"></div>';
+        }
+        childEl.innerHTML = html;
+    }
+
+    // 한 슬롯 placeholder (.kbgx-banner) 를 전체 재렌더.
+    // 내부에 그룹별 자식 <div class="kbgx-banner-group"> 을 순서대로 생성.
+    function renderSlot(el, now) {
+        var cat = el.getAttribute('data-kbgx-cat');
+        var slot = el.getAttribute('data-kbgx-slot');
+        if (!cat || !slot) return;
+        var groups = listGroups(cat, slot);
+        if (!groups.length) {
+            el.classList.add('kbgx-empty');
+            el.innerHTML = '';
+            return;
+        }
+        // 기존 children 재사용 (개수가 같을 때) 또는 재생성
+        var existing = el.querySelectorAll(':scope > .kbgx-banner-group');
+        var needRebuild = existing.length !== groups.length;
+        if (needRebuild) {
+            el.innerHTML = '';
+            for (var i = 0; i < groups.length; i++) {
+                var child = document.createElement('div');
+                child.className = 'kbgx-banner-group';
+                child.setAttribute('data-kbgx-group', groups[i]);
+                el.appendChild(child);
+            }
+        } else {
+            // 순서가 바뀌었을 수 있으므로 data-kbgx-group 동기화
+            for (var j = 0; j < groups.length; j++) {
+                existing[j].setAttribute('data-kbgx-group', groups[j]);
+            }
+        }
+        var children = el.querySelectorAll(':scope > .kbgx-banner-group');
+        var anyActive = false;
+        for (var k = 0; k < children.length; k++) {
+            renderGroupChild(children[k], cat, slot, groups[k], now);
+            if (!children[k].classList.contains('kbgx-empty')) anyActive = true;
+        }
+        el.classList.toggle('kbgx-empty', !anyActive);
+    }
+
+    function updateCountdown(rootEl, now) {
+        var cdEls = rootEl.querySelectorAll('.kbgx-countdown');
+        for (var i = 0; i < cdEls.length; i++) {
+            var cdEl = cdEls[i];
+            var target = cdEl.getAttribute('data-kbgx-cd');
+            var tm = hhmmToMin(target);
+            if (tm == null) continue;
+            var nowM = now.getHours() * 60 + now.getMinutes();
+            var nowS = now.getSeconds();
+            if (nowM > tm) {
+                cdEl.style.display = 'none';
+                continue;
+            }
+            var diffSec = (tm - nowM) * 60 - nowS;
+            if (diffSec < 0) {
+                cdEl.style.display = 'none';
+                continue;
+            }
+            cdEl.style.display = '';
+            var h = Math.floor(diffSec / 3600);
+            var m = Math.floor((diffSec % 3600) / 60);
+            var s = diffSec % 60;
+            var txt;
+            if (h > 0) txt = '⏰ 마감까지 ' + h + '시간 ' + m + '분';
+            else if (m > 0) txt = '⏰ 마감까지 ' + m + '분 ' + s + '초';
+            else txt = '⏰ 마감까지 ' + s + '초';
+            cdEl.textContent = txt;
+        }
+    }
+
+    function tick(force) {
+        var now = new Date();
+        var slots = document.querySelectorAll('.kbgx-banner');
+        var curMin = now.getHours() * 60 + now.getMinutes();
+        if (force || window.__kbgxLastMin !== curMin) {
+            for (var i = 0; i < slots.length; i++) renderSlot(slots[i], now);
+            window.__kbgxLastMin = curMin;
+        }
+        for (var j = 0; j < slots.length; j++) updateCountdown(slots[j], now);
+    }
+
+    // 외부(preview.html 등)에서 placeholder 의 data-kbgx-cat 을 바꾼 뒤
+    // 즉시 재렌더하고 싶을 때 호출. force=true 면 분 캐시 무시.
+    window.__kbgxBannerTick = tick;
+
+    // 대시보드에서 그룹을 추가/삭제/순서변경한 뒤 자식 div 를 깨끗이 재생성하고 싶을 때.
+    window.__kbgxBannerRebuild = function () {
+        var slots = document.querySelectorAll('.kbgx-banner');
+        for (var i = 0; i < slots.length; i++) slots[i].innerHTML = '';
+        tick(true);
+    };
+
+    function start() {
+        tick(true);
+        setInterval(function () { tick(false); }, 1000);
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', start);
+    } else {
+        start();
+    }
+})();
+
+</script>
+<script>
+var _iframeId = "kbgx-iframe-골드바";
+function _kbgxH(){window.parent.postMessage({type:"kbgx-h",id:_iframeId,h:document.documentElement.scrollHeight},"*");}
+window.addEventListener("load",_kbgxH);
+window.addEventListener("resize",_kbgxH);
+new MutationObserver(_kbgxH).observe(document.body,{childList:!0,subtree:!0,attributes:!0});
+</script>
+</body>
+</html>
